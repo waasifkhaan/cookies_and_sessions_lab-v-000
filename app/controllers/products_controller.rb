@@ -3,7 +3,8 @@ class ProductsController < ApplicationController
   def index
   end
   def add
-    @item = params[:product]
+    cart << params[:product]
+      render :index
 
   end
 end
